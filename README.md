@@ -93,7 +93,9 @@ This is black magic for sure! That is much more one can extract from Taken's The
 ## Reference
 
 ![wiki](https://en.wikipedia.org/wiki/Chua%27s_circuit)
+
 ![Alexandre Sordi paper](https://doi.org/10.1590/1806-9126-rbef-2020-0437)
+
 ![L.O. Chua](https://arxiv.org/abs/1710.02677)
 
 
