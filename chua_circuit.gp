@@ -21,7 +21,7 @@ set border 3071+2048-128
 show surface 
 set grid 
 set output "ts_chua_circuit.png"
-set label 1 "" at sprintf("%f %f %f",stats_2_mean, stats_3_mean, stats_4_mean) point pt 7 lw 1.5
+# set label 1 "" at sprintf("%f %f %f",stats_2_mean, stats_3_mean, stats_4_mean) point pt 7 lw 1.5
 splot data_pnt u 2:3:4 notitle w l
 
 reset
