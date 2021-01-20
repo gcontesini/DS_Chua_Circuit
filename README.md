@@ -11,7 +11,7 @@ The reason why I did this was that I just found this system very interest.
 
 System Differential Equation ( dimensionless )
 
-$\frac{d}{dt}x = \alpha[ y - x(b+1) - f(x)]$
+![formula](https://render.githubusercontent.com/render/math?math=\frac{d}{dt}x = \alpha[ y - x(b+1) - f(x)])
 
 $\frac{d}{dt}y = x-y+z$
 
