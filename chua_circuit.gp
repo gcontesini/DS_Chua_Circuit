@@ -75,7 +75,7 @@ fit[0:60] f(x) data_pnt u 1:5 via a,b
 a               = 0.145943
 b               = -12.1089
 plot[1:200] data_pnt u 1:5 notitle w l
-replot[0:60] f(x) lt rgb "black" lw 2 title "L_{exp} = 0.892456"
+replot[0:60] f(x) lt rgb "black" lw 2 title "L_{exp} = 0.132756"
 set output "chua_circuit_lyapunov_exp.png"
 replot
 
