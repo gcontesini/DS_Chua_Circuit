@@ -63,14 +63,18 @@ With a lyapunov exponent of $0.132756$ and a Lyapunov time of $7.5357$, after
 
 ## Stability Points
 
-![Stability Behaviour](https://github.com/gcontesini/DS_Chua_Circuit/blob/master/ts_chua_circuit_stability.png)
-
 The Stability points can be achieve by open the circuit
 
 $i^{\star}(x)= -x\cdot(\frac{\epsilon}{(\beta+\epsilon)}+b)$
 
 When the circuit is open, the current
-$x=0.6104\hspace{0.25cm}  y=0.0050\hspace{0.25cm}  z=-0.6053$
+First Stable Points$x=1.1686\hspace{0.25cm}  y=0.0096\hspace{0.25cm}  z=-1.1589$
+
+$x=-1.1686\hspace{0.25cm}  y=-0.0096\hspace{0.25cm}  z=1.1589$
+
+![First Stable Point](https://github.com/gcontesini/DS_Chua_Circuit/blob/master/ts_chua_circuit_FSP.png)
+
+![Second Stable Point](https://github.com/gcontesini/DS_Chua_Circuit/blob/master/ts_chua_circuit_SSP.png)
 
 ## Taken's Theorem
 
