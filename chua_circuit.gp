@@ -15,14 +15,18 @@ do for [COL=1:4] {stats data_pnt u COL name sprintf("stats_%d",COL) nooutput}
 set view 45.0, 165.0, 1,1
 set xrange[-2:2]
 set yrange[-0.4:0.4]
+set zrange[-3:3]
 set mapping cartesian
+set palette defined (1 'blue', 2 'red' )
 # help border
+set pm3d at b
 set border 3071+2048-128 
-show surface 
 set grid 
 set output "ts_chua_circuit.png"
-# set label 1 "" at sprintf("%f %f %f",stats_2_mean, stats_3_mean, stats_4_mean) point pt 7 lw 1.5
-splot data_pnt u 2:3:4 notitle w l
+# set label 1 "" at sprintf("%f %f %f",stats_2_mean, stats_3_mean, stats_4_mean) point pt 18 lw 1.
+# set arrow 5 from stats_1_mean, stats_2_mean, stats_3_mean  to stats_1_mean, stats_2_min ,-3+0.01
+# set label 5 at stats_1_mean, stats_2_mean, stats_3_mean-0.1 sprintf("%f",stats_2_mean) center
+splot data_pnt u 2:3:4 notitle w l lc palette
 
 reset
 
@@ -89,7 +93,7 @@ takens_x_data_pnt = "takens_x_data_pnt.dat"
 set grid
 set view 60, 40, 1,1
 set border 3071+2048-128 back
-splot takens_x_data_pnt u 2:3:4 w l title "x ts"
+splot takens_x_data_pnt u 2:3:4 w l title "x ts" lc palette
 set output "chua_x_takens_theorem.png"
 replot 
 
@@ -97,7 +101,7 @@ takens_y_data_pnt = "takens_y_data_pnt.dat"
 set grid
 set view 50, 10, 1,1
 set border 3071+2048-128 back
-splot takens_y_data_pnt u 2:3:4 w l title "y ts"
+splot takens_y_data_pnt u 2:3:4 w l title "y ts" lc palette
 set output "chua_y_takens_theorem.png"
 replot 
 
@@ -105,7 +109,7 @@ takens_z_data_pnt = "takens_z_data_pnt.dat"
 set grid
 set view 55, 340, 1, 1
 set border 3071+2048-128 back 
-splot takens_z_data_pnt u 2:3:4 w l title "z ts"
+splot takens_z_data_pnt u 2:3:4 w l title "z ts" lc palette
 set output "chua_z_takens_theorem.png"
 
 replot
