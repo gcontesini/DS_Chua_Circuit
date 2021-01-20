@@ -19,9 +19,9 @@ def main():
 
   # CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC INITIAL CONDITIONS 1
 
-  x_float = -1.0
-  y_float = -1.0
-  z_float = 1.0
+  x_float = 0.15
+  y_float = 0.15
+  z_float = 0.15
   
   # CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC INITIAL CONDITIONS 2
 
@@ -131,8 +131,8 @@ def input_current(
   phi_float = 2.0
   beta_float = 15.0
   epsilon_float = 0.125
-  # return a_float*np.tanh(phi_float*x_float_)
-  return -x_float_*(beta_float/(beta_float+epsilon_float) + b_float)
+  return a_float*np.tanh(phi_float*x_float_)
+  # return -x_float_*(beta_float/(beta_float+epsilon_float) + b_float)
 
 # CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC CALL MAIN
 
