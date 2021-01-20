@@ -78,11 +78,7 @@ $x=-1.1686\hspace{0.25cm}  y=-0.0096\hspace{0.25cm}  z=1.1589$
 
 ## Taken's Theorem
 
-Reconstruction of the Lorenz attractor based on taken's theorem
-
-The lag was no optimized so these plots can have way more information.
-
-This is black magic for sure! That is much more one can extract from Taken's Theorem, but I'm lazy go read some classical dynamical system papers.
+Reconstruction of the Chua attractor based on taken's theorem
 
 ![only x time series](https://github.com/gcontesini/DS_Chua_Circuit/blob/master/chua_x_takens_theorem.png)
 
